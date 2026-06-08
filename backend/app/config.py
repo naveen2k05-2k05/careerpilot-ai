@@ -7,7 +7,12 @@ class Settings(BaseSettings):
     firebase_project_id: str = ""
     firebase_credentials_path: str = "./firebase-credentials.json"
     gemini_api_key: str = ""
-    cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173"
+    cors_origins: str = (
+    "http://localhost:5173,"
+    "http://127.0.0.1:5173,"
+    "https://pilotyourcareer.netlify.app"
+    ) 
+
     secret_key: str = "dev-secret-key"
     dev_mode: bool = True
     dev_auth_token: str = "careerpilot-dev-local-token"
