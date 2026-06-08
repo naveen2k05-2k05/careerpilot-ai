@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CareerPilot AI
 
 AI-powered Career Coach and Interview Preparation Platform.
@@ -99,3 +100,6 @@ npm run dev
 ## License
 
 MIT
+=======
+# careerpilot-ai
+>>>>>>> a9c378a49608ce6c388b7667d0ce4c2af51e0c72
