@@ -1,105 +1,359 @@
-<<<<<<< HEAD
-# CareerPilot AI
+# 🚀 CareerPilot AI
 
-AI-powered Career Coach and Interview Preparation Platform.
+### AI-Powered Career Coaching & Interview Preparation Platform
 
-## Quick Start (Windows)
+CareerPilot AI is a full-stack career development platform designed to help students, freshers, and professionals improve their job readiness through resume analysis, interview preparation, career roadmaps, learning progress tracking, and job application management.
 
-```powershell
-# 1. Backend setup (first time only)
+The platform provides an end-to-end career growth experience by combining career analytics, resume evaluation, interview practice, and personalized recommendations within a modern web application.
+
+---
+
+🌐 Live Demo
+
+Development Deployment (Netlify)
+
+🔗 Live Application: https://pilotyourcareer.netlify.app/login
+
+⚠️ This is currently a development/testing deployment. Some features may use mock data, development authentication, or simulated AI responses while production integrations are being finalized.
+
+Demo Mode Available:
+
+Continue as Demo User
+Test Dashboard Features
+Resume Analysis Workflow
+Interview Preparation Modules
+Analytics Dashboard
+
+## 🌟 Key Features
+
+### 🔐 Authentication
+
+* Firebase Authentication
+* Google Sign-In
+* Secure Session Management
+* Demo Login for Local Development
+
+### 📊 Career Dashboard
+
+* Resume Score Analysis
+* Interview Readiness Score
+* Skills Progress Tracking
+* Application Statistics
+* Personalized Recommendations
+
+### 📄 Resume Analyzer
+
+* PDF & DOCX Resume Upload
+* Skill Extraction
+* ATS Score Calculation
+* Missing Skills Detection
+* Resume Improvement Suggestions
+
+### 🎯 Career Coach
+
+Generate personalized career roadmaps for:
+
+* Software Engineer
+* Data Analyst
+* Data Scientist
+* AI Engineer
+* Full Stack Developer
+
+Provides:
+
+* Required Skills
+* Learning Roadmaps
+* Recommended Projects
+* Preparation Timeline
+
+### 💼 Job Match Analyzer
+
+Compare Resume vs Job Description
+
+Outputs:
+
+* Match Percentage
+* Missing Skills
+* Skill Gap Analysis
+* Action Plan
+
+### 🎤 Interview Preparation
+
+* HR Interview Questions
+* Technical Questions
+* Project-Based Questions
+* Scenario-Based Questions
+
+Difficulty Levels:
+
+* Beginner
+* Intermediate
+* Advanced
+
+### 🧠 Mock Interview Module
+
+* Interactive Interview Simulation
+* Follow-up Questions
+* Realistic Interview Flow
+* Performance Evaluation
+
+### 📈 Interview Feedback Engine
+
+Provides:
+
+* Technical Score
+* Communication Score
+* Confidence Score
+* Overall Rating
+* Improvement Suggestions
+
+### 🚀 Project Recommendation Engine
+
+Project recommendations based on target career role.
+
+Includes:
+
+* Beginner Projects
+* Intermediate Projects
+* Advanced Projects
+
+Each project includes:
+
+* Description
+* Technologies Used
+* Difficulty Level
+* Resume Impact
+
+### 📚 Learning Tracker
+
+Track:
+
+* Skills Learned
+* Courses Completed
+* Projects Completed
+* Interview Practice Sessions
+
+### 📋 Job Application Tracker
+
+Manage:
+
+* Applied
+* Under Review
+* Interview Scheduled
+* Rejected
+* Offer Received
+
+Store:
+
+* Company Name
+* Role
+* Application Date
+* Notes
+
+### 📊 Analytics Dashboard
+
+Visualize:
+
+* Skill Growth
+* ATS Improvement
+* Interview Performance
+* Job Application Success Rate
+
+---
+
+# 🏗️ System Architecture
+
+Frontend (React + TypeScript)
+↓
+FastAPI REST APIs
+↓
+Firebase Authentication
+↓
+Database Layer (SQLite/PostgreSQL)
+↓
+Career Analytics & Recommendation Engine
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
+| Technology   | Purpose               |
+| ------------ | --------------------- |
+| React.js     | User Interface        |
+| TypeScript   | Type Safety           |
+| Tailwind CSS | Responsive UI Styling |
+| React Router | Client-Side Routing   |
+| Chart.js     | Data Visualization    |
+| Axios        | API Communication     |
+
+---
+
+## Backend
+
+| Technology | Purpose              |
+| ---------- | -------------------- |
+| Python     | Core Language        |
+| FastAPI    | REST API Development |
+| SQLAlchemy | ORM                  |
+| Pydantic   | Data Validation      |
+| Uvicorn    | ASGI Server          |
+
+---
+
+## Database
+
+| Environment | Database   |
+| ----------- | ---------- |
+| Development | SQLite     |
+| Production  | PostgreSQL |
+
+---
+
+## Authentication
+
+| Technology              | Purpose             |
+| ----------------------- | ------------------- |
+| Firebase Authentication | User Authentication |
+| Google OAuth            | Social Login        |
+
+---
+
+## AI Layer
+
+Current Version:
+
+* Rule-Based Recommendation Engine
+* Resume Analysis Logic
+* Interview Evaluation Engine
+
+Planned Enhancements:
+
+* Google Gemini Integration
+* LLM-Powered Career Coaching
+* AI Resume Analysis
+* AI Interview Feedback
+* RAG-Based Knowledge Retrieval
+
+---
+
+# 🚀 Quick Start
+
+## Backend Setup
+
+```bash
 cd backend
+
 py -m venv venv
+
 .\venv\Scripts\activate
+
 pip install -r requirements.txt
+```
 
-# 2. Frontend setup (first time only)
-cd ..\frontend
+## Frontend Setup
+
+```bash
+cd frontend
+
 npm install
+```
 
-# 3. Start both servers
+## Run Application
+
+```bash
 cd ..
+
 .\start.ps1
 ```
 
-Open **http://127.0.0.1:5173** and click **Continue as Demo User** — no Firebase required for local dev.
+---
 
-| URL | Description |
-|-----|-------------|
-| http://127.0.0.1:5173 | React app |
-| http://127.0.0.1:8000/docs | API documentation |
-| http://127.0.0.1:8000/health | Health check |
+# 🌐 Application URLs
 
-## Features
+| Service           | URL                          |
+| ----------------- | ---------------------------- |
+| Frontend          | http://127.0.0.1:5173        |
+| API Documentation | http://127.0.0.1:8000/docs   |
+| Health Check      | http://127.0.0.1:8000/health |
 
-- Authentication (Firebase + **Demo Mode** for local dev)
-- Dashboard with resume score, interview readiness, recommendations
-- Resume Analyzer (PDF/DOCX upload, ATS scoring, skill extraction)
-- Career Coach (role-based roadmaps)
-- Job Match Analyzer (with optional save to applications)
-- AI Interview Coach & Mock Interview with feedback
-- Project Recommendations with portfolio tracking
-- Learning Tracker & Job Application Tracker
-- Analytics Dashboard with Chart.js visualizations
+---
 
-## Tech Stack
+# ⚙️ Environment Variables
 
-| Layer | Technology |
-|-------|------------|
-| Frontend | React, TypeScript, Tailwind CSS, React Router, Chart.js |
-| Backend | Python FastAPI |
-| Database | SQLite (local) / PostgreSQL (production) |
-| Auth | Firebase Authentication + Dev bypass |
-| AI | Google Gemini API (mock fallback when no key) |
-
-## Environment Variables
-
-### Backend (`backend/.env`)
+## Backend (.env)
 
 ```env
 DATABASE_URL=sqlite:///./careerpilot.db
+
 DEV_MODE=true
+
 DEV_AUTH_TOKEN=careerpilot-dev-local-token
-GEMINI_API_KEY=           # optional — uses mock AI without it
-FIREBASE_PROJECT_ID=      # required for production auth
+
+GEMINI_API_KEY=
+
+FIREBASE_PROJECT_ID=
+
 FIREBASE_CREDENTIALS_PATH=./firebase-credentials.json
+
 CORS_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
 ```
 
-### Frontend (`frontend/.env`)
+## Frontend (.env)
 
 ```env
 VITE_API_URL=http://127.0.0.1:8000/api
+
 VITE_DEV_MODE=true
+
 VITE_DEV_AUTH_TOKEN=careerpilot-dev-local-token
-VITE_FIREBASE_*=          # required for production auth
+
+VITE_FIREBASE_API_KEY=
+
+VITE_FIREBASE_AUTH_DOMAIN=
+
+VITE_FIREBASE_PROJECT_ID=
 ```
 
-## Production Setup
+---
 
-1. Set `DEV_MODE=false` on backend
-2. Configure real Firebase credentials (frontend + backend)
-3. Set `GEMINI_API_KEY` for live AI responses
-4. Use PostgreSQL: `DATABASE_URL=postgresql://postgres:postgres@localhost:5432/careerpilot`
-5. Deploy frontend to **Netlify**, backend to **Render**
+# 🚀 Production Deployment
 
-## Manual Start
+## Frontend
 
-**Backend:**
-```powershell
-cd backend
-.\venv\Scripts\activate
-python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
-```
+* Netlify
 
-**Frontend:**
-```powershell
-cd frontend
-npm run dev
-```
+## Backend
 
-## License
+* Render
 
-MIT
-=======
-# careerpilot-ai
->>>>>>> a9c378a49608ce6c388b7667d0ce4c2af51e0c72
+## Database
+
+* PostgreSQL
+
+Production Checklist:
+
+* Configure Firebase Authentication
+* Add Gemini API Key
+* Configure PostgreSQL Database
+* Disable Development Mode
+* Configure Environment Variables
+
+---
+
+# 🔮 Future Enhancements
+
+* Gemini AI Integration
+* AI Career Coach
+* Resume Semantic Analysis
+* AI Mock Interviews
+* Personalized Learning Recommendations
+* RAG-Based Knowledge Retrieval
+* Voice-Based Interview Practice
+
+---
+
+## 📄 License
+
+MIT License
