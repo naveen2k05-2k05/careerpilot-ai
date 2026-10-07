@@ -2,11 +2,11 @@
 
 ### AI-Powered Career Coaching & Interview Preparation Platform
 
-CareerPilot AI is a full-stack career development platform that helps **students, freshers, and professionals** improve job readiness through resume analysis, career roadmaps, interview preparation, project recommendations, learning tracking, and job application management.
+CareerPilot AI is a full-stack career development platform that helps students and professionals improve job readiness through **resume analysis, career roadmaps, interview preparation, project recommendations, learning tracking, and job application management.**
 
 <p align="center">
 
-**Resume Analysis** • **Career Planning** • **Interview Preparation** • **Job Tracking** • **Analytics**
+`React` · `TypeScript` · `FastAPI` · `Firebase` · `SQLAlchemy` · `SQLite/PostgreSQL`
 
 </p>
 
@@ -20,43 +20,23 @@ CareerPilot AI is a full-stack career development platform that helps **students
 
 ---
 
-# 🏗️ Architecture
+## 💡 Overview
 
 ```text
-                         ┌─────────────────────┐
-                         │        USER         │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                    ┌───────────────────────────┐
-                    │   React + TypeScript      │
-                    │      Frontend UI          │
-                    └─────────────┬─────────────┘
-                                  │
-                             REST / JSON
-                                  │
-                                  ▼
-                    ┌───────────────────────────┐
-                    │       FastAPI Backend     │
-                    │                           │
-                    │ Resume • Jobs • Interview │
-                    │ Analytics • Recommendations│
-                    └───────┬───────────┬───────┘
-                            │           │
-                 ┌──────────┘           └──────────┐
-                 ▼                                 ▼
-        ┌────────────────┐                ┌─────────────────┐
-        │ Firebase Auth  │                │   SQLAlchemy    │
-        │                │                │      ORM        │
-        │ Google OAuth   │                └────────┬────────┘
-        └────────────────┘                         │
-                                                   ▼
-                                      ┌────────────────────────┐
-                                      │ SQLite / PostgreSQL    │
-                                      └───────────┬────────────┘
-                                                  │
-                                                  ▼
-                                      ┌────────────────────────┐
-                                      │ Career Analytics &     │
-                                      │ Recommendation Engine  │
-                                      └────────────────────────┘
+Resume
+  ↓
+Analysis & ATS Score
+  ↓
+Skill Gap
+  ↓
+Career Roadmap
+  ↓
+Projects & Learning
+  ↓
+Interview Preparation
+  ↓
+Performance Feedback
+  ↓
+Job Applications
+  ↓
+Career Analytics
